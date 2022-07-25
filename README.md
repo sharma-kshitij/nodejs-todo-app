@@ -14,5 +14,5 @@ Inside the project folder, open up a terminal and run
 
 Followed by 
 
-### npm run
+### npm start
 
