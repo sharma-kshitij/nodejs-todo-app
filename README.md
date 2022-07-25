@@ -10,9 +10,9 @@ Clone the repo
 
 Inside the project folder, open up a terminal and run 
 
-# npm install
+### npm install
 
 Followed by 
 
-# npm run
+### npm run
 
