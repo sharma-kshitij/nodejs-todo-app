@@ -8,7 +8,7 @@ https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.0.0-signed.msi
 
 Clone the repo
 
-Run inside the project folder, open up a terminal and run 
+Inside the project folder, open up a terminal and run 
 
 # npm install
 
