@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 
 const app = express()
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 app.set("view engine","ejs")
 app.use(express.static("public"))
@@ -32,9 +32,6 @@ Item.insertMany(todos,(err)=>{
     if(err){
         console.log(err)
     }
-    else{
-        console.log("Saved!")
-    }
 })
 
 app.get("/",(req,res)=>{
@@ -44,10 +41,8 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/delete",(req,res)=>{
-    console.log(req.body)
     Item.findByIdAndRemove(req.body.delete ,(err)=>{
         if(!err){
-            console.log("Deleted!")
             res.redirect("/")
         }
         else{
