@@ -10,7 +10,8 @@ app.set("view engine","ejs")
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended:true}))
 
-mongoose.connect("mongodb+srv://dbUser:lXmes5RvIHqwxJfJ@cluster0.zneh7wf.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb://localhost:27017/mytodo-auth")
+// mongoose.connect("mongodb+srv://dbUser:lXmes5RvIHqwxJfJ@cluster0.zneh7wf.mongodb.net/?retryWrites=true&w=majority")
 const itemSchema = {
     name : String,
     priority : Number
